@@ -7,6 +7,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 2fr;
     border-bottom: solid 5px goldenrod;
+    padding-top: 20px;
 }
 
 .links {
@@ -49,4 +50,5 @@ a:active {
     font-size: 50px;
     font-family: Optima;
     text-decoration: none;
+    padding-left: 20px;
 }

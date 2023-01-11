@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
+// import './Edit.css'
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -42,14 +43,15 @@ export default function Edit() {
       }
 
       return (
-        <div>
-            <h3>Add New Transaction</h3>
+        <div className='edit-form'>
+            <h3 className='edit-title'>Edit Transaction</h3>
 
             <form onSubmit={handleSubmit}>
                 
                 <label>
-                    Transaction Name: {' '}
+                    <b>Name:</b>{' '}
                     <input
+                    className='name'
                     type='text'
                     id='item_name'
                     value={transaction.item_name}
@@ -58,8 +60,9 @@ export default function Edit() {
                 </label>
                 <br />
                 <label>
-                    Amount: {' '}
+                    <b>Amount:</b> {' '}
                     <input
+                    className='amount'
                     id='amount'
                     value={transaction.amount}
                     type='number'
@@ -68,8 +71,9 @@ export default function Edit() {
                 </label>
                 <br />
                 <label>
-                    Date: {' '}
+                    <b>Date:</b> {' '}
                     <input
+                    className='date'
                     id='date'
                     value={transaction.date}
                     type='text'
@@ -78,8 +82,9 @@ export default function Edit() {
                 </label>
                 <br />
                 <label>
-                    From: {' '}
+                    <b>From:</b> {' '}
                     <input
+                    className='from'
                     id='from'
                     value={transaction.from}
                     type='text'
@@ -88,13 +93,18 @@ export default function Edit() {
                 </label>
                 <br />
                 <label>
-                    Category: {' '}
-                    <input
+                    <b>Category:</b>{' '}
+                    <select
+                    className='category'
                     id='category'
                     value={transaction.category}
-                    type='text'
                     onChange={handleTextChange}>
-                    </input>
+                        <option value='' id=''>
+                            Choose Category
+                        </option>
+                        <option value='Income'>Income</option>
+                        <option value='Expense'>Expense</option>
+                    </select>
                 </label>
                 <br />
                 

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import './Transaction.css'
 const API = process.env.REACT_APP_API_URL
 
 export default function Transaction() {
@@ -26,30 +27,30 @@ export default function Transaction() {
     }
 
     return (
-        <div>
-            <article>
-                <h3>
+        <div className='transaction-info'>
+            <article className='transaction'>
+                <h2 className='name'>
                     {transaction.item_name}
-                </h3>
-                <table>
-                    <tr>
-                    Date Of Transaction: {transaction.date}
+                </h2>
+                <table className='info-table'>
+                    <tr className='date'>
+                   <b> Date Of Transaction: </b> {transaction.date}
                     </tr>
-                    <tr>
-                    Amount: {transaction.amount}
+                    <tr className='amount'>
+                    <b>Amount: </b>{transaction.amount}
                     </tr>
-                    <tr>
-                    From: {transaction.from}
+                    <tr className='from'>
+                    <b>From: </b> {transaction.from}
                     </tr>
-                    <tr>
-                    Category: {transaction.category}
+                    <tr className='category'>
+                    <b>Category: </b> {transaction.category}
                     </tr>
                 </table>
             </article>
-            <div>
-                <button onClick={() => navigate('/')}>Back</button>
-                <button onClick={() => navigate(`/transactions/${index}/edit`)}>Edit</button>
-                <button onClick={handleDelete}>Delete</button>
+            <div className='buttons'>
+                <button className='back' onClick={() => navigate('/')}><b>Back</b></button>
+                <button className='edit' onClick={() => navigate(`/transactions/${index}/edit`)}><b>Edit</b></button>
+                <button className='delete' onClick={handleDelete}><b>Delete</b></button>
             </div>
         </div>
     )

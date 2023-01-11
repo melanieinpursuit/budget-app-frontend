@@ -1,0 +1,53 @@
+.transaction-info {
+    background-color: bisque;
+    margin: auto;
+    font-family: Optima;
+    padding: 20px;
+}
+
+.buttons {
+    background-color: bisque;
+    padding: 20px;
+    padding-bottom: 350px;
+}
+
+.name {
+    margin: 20px;
+}
+
+.info-table {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.back {
+    position: absolute;
+    right: 780px;
+    background-color: black;
+    font-family: Optima;
+    color: goldenrod;
+    border: solid 2px goldenrod;
+    width: 75px;
+}
+
+.edit {
+    position: absolute;
+    right: 680px;
+    background-color: black;
+    font-family: Optima;
+    color: goldenrod;
+    border: solid 2px goldenrod;
+    width: 75px;
+}
+
+.delete {
+    position: absolute;
+    right: 580px;
+    background-color: black;
+    font-family: Optima;
+    color: goldenrod;
+    border: solid 2px goldenrod;
+    width: 75px;
+}

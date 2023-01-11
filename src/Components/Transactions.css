@@ -1,16 +1,29 @@
 .transactions {
     display: grid;
     background-color: bisque;
-    padding-bottom: 2000px;
+    padding-bottom: 500px;
+    font-family: Optima;
 }
 
 .pageTitle {
     text-align: center;
-    text-decoration: solid black 5px;
+    text-decoration: solid black 2px;
     padding: auto;
+}
+
+.transactionInfo {
+    text-align: center;
+    border: solid 2px goldenrod;
+    background-color: beige;
+    margin-bottom: 10px;
 }
 
 .funds {
     text-align: center;
+    text-decoration: solid 2px black;
+    padding-bottom: 0px;
+}
+
+.date {
     text-decoration: solid 2px black;
 }

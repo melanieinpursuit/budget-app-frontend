@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { v4 as uuid } from "uuid";
+import './New.css'
 const API = process.env.REACT_APP_API_URL
 
 export default function New() {
@@ -29,14 +30,15 @@ export default function New() {
     }
 
     return (
-        <div>
-            <h3>Add New Transaction</h3>
+        <div className='edit-form'>
+            <h3 className='edit-title'>Add New Transaction</h3>
 
             <form onSubmit={handleSubmit}>
                 
                 <label>
-                    Transaction Name: {' '}
+                    <b>Name:</b>{' '}
                     <input
+                    className='name'
                     type='text'
                     id='item_name'
                     value={transaction.item_name}
@@ -45,8 +47,9 @@ export default function New() {
                 </label>
                 <br />
                 <label>
-                    Amount: {' '}
+                    <b>Amount: </b>{' '}
                     <input
+                    className='amount'
                     id='amount'
                     value={transaction.amount}
                     type='number'
@@ -55,8 +58,9 @@ export default function New() {
                 </label>
                 <br />
                 <label>
-                    Date: {' '}
+                    <b>Date:</b> {' '}
                     <input
+                    className='date'
                     id='date'
                     value={transaction.date}
                     type='text'
@@ -65,8 +69,9 @@ export default function New() {
                 </label>
                 <br />
                 <label>
-                    From: {' '}
+                    <b>From:</b> {' '}
                     <input
+                    className='from'
                     id='from'
                     value={transaction.from}
                     type='text'
@@ -75,8 +80,9 @@ export default function New() {
                 </label>
                 <br />
                 <label>
-                    Category: {' '}
+                    <b>Category:</b>{' '}
                     <select
+                    className='category'
                     id='category'
                     value={transaction.category}
                     onChange={handleTextChange}>
@@ -89,7 +95,7 @@ export default function New() {
                 </label>
                 <br />
                 
-                <input type='submit' />
+                <input className='submit' type='submit' />
 
             </form>
         </div>

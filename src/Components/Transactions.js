@@ -29,12 +29,12 @@ export default function Transactions() {
     return (
         <div className='transactions'>
             <h2 className='pageTitle'>All Transactions</h2>
-            <h2 className='funds'>Total Funds: <h2 style={{ color: total > 1000 ? 'green' :  total < 0 ? 'red' : 'gray'}}> ${total} </h2></h2>
+            <h2 className='funds'>Total Funds: <h2 style={{ color: total > 1000 ? 'green' :  total < 0 ? 'red' : 'gray' }}> ${total} </h2></h2>
             <hr></hr>
             {transactions.map((transaction, index) => {
                 return (
-                    <div key={index}>
-                        <h4>{transaction.date}</h4>
+                    <div className='transactionInfo' key={index}>
+                        <h4 className="date">{transaction.date}</h4>
                         <Link to={`/transactions/${index}`}>
                             <h4>{transaction.item_name}</h4>
                         </Link>

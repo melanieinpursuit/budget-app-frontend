@@ -1,0 +1,28 @@
+.edit-form {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 400px;
+    font-family: Optima;
+}
+
+.name {
+    margin: 5px;
+}
+
+.amount {
+    margin: 5px;
+    margin-right: 2px;
+}
+
+.date {
+    margin: 5px;
+}
+
+.from {
+    margin: 5px;
+}
+
+.category {
+    margin: 5px;
+}
