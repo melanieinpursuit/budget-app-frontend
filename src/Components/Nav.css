@@ -1,0 +1,52 @@
+
+
+.navbar {
+    background-color: black;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr;
+    border-bottom: solid 5px goldenrod;
+}
+
+.links {
+    font-family: Optima;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 35px;
+    text-align: bottom;
+    padding-left: 300px;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: goldenrod; 
+}
+
+a:hover { 
+    text-decoration: none; 
+    color:silver; 
+}
+
+a:focus { 
+    text-decoration: none; 
+    color:goldenrod; 
+}
+
+a:active { 
+    text-decoration: none; 
+    color:goldenrod; 
+}
+
+.title {
+    text-align: left;
+    font-size: 50px;
+    font-family: Optima;
+    text-decoration: none;
+}

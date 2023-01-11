@@ -1,0 +1,16 @@
+.transactions {
+    display: grid;
+    background-color: bisque;
+    padding-bottom: 2000px;
+}
+
+.pageTitle {
+    text-align: center;
+    text-decoration: solid black 5px;
+    padding: auto;
+}
+
+.funds {
+    text-align: center;
+    text-decoration: solid 2px black;
+}
